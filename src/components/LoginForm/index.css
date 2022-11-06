@@ -1,0 +1,112 @@
+/* Write your CSS code here */
+* {
+  font-family: roboto;
+}
+.login-route-container {
+  padding: 1.5em;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  min-height: 85vh;
+  margin: auto 0;
+}
+
+.login-route-image {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  padding: 1.2em;
+}
+
+.login-route-form-logo {
+  width: 60%;
+  align-self: center;
+}
+.form-input {
+  width: 100%;
+  margin: 0.5em 0.2em 0.2em 0em;
+  background-color: #d7dfe9;
+  outline: none;
+  border: none;
+  height: 5vh;
+}
+
+.username-container,
+.password-container {
+  margin: 0.4em;
+}
+
+.login-button {
+  width: 100%;
+  margin: 0.5em 0.2em 0.2em 0.2em;
+  outline: none;
+  border: none;
+  background-color: #0b69ff;
+  height: 6vh;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 425px) {
+  .login-route-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .login-route-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .login-route-image {
+    width: 50%;
+  }
+
+  form {
+    width: 35%;
+    min-height: 300px;
+    justify-content: center;
+  }
+
+  html {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 22px;
+  }
+  .login-route-container {
+    justify-content: space-around;
+    width: 90%;
+  }
+  .login-route-image {
+    width: 50%;
+  }
+
+  .login-route-form-logo {
+    width: 40%;
+  }
+
+  form {
+    width: 30%;
+    padding: 1em;
+    min-height: 350px;
+  }
+}
