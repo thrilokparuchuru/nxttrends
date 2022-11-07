@@ -1,1 +1,45 @@
 /* Write your CSS code here */
+html {
+  font-size: 14px;
+}
+
+.shopnow-button {
+  background-color: #0b69ff;
+  border: none;
+  outline: none;
+  height: 6vh;
+  width: 25vw;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0.5em 0 1em 0;
+}
+
+.clothes-that-get-you-noticed-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 525px) {
+  .content {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .clothes-that-get-you-noticed-image {
+    width: 30%;
+    margin: 2em;
+  }
+
+  .content-content {
+    width: 40%;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  .shopnow-button {
+    width: 25%;
+  }
+}

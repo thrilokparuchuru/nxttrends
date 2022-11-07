@@ -5,7 +5,7 @@ import {Component} from 'react'
 import './index.css'
 
 class LoginForm extends Component {
-  state = {userName: '', password: ''}
+  state = {userName: '', password: '', error: ''}
 
   username = event => {
     this.setState({userName: event.target.value})
@@ -28,7 +28,6 @@ class LoginForm extends Component {
 
     const response = await fetch(url, options)
     // const data = await response.json()
-    console.log(response)
   }
 
   render() {
